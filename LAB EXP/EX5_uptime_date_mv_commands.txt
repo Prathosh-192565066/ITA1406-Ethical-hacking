@@ -1,0 +1,37 @@
+ITA14 - ETHICAL HACKING
+EX - 5
+Execute and display the results for the following commands in Kali Linux
+Operating Systems: Uptime, Date, Mv
+=============================================================
+
+uptime command
+--------------
+┌──(kali㉿kali)-[~]
+└─$ uptime
+ 11:42:18 up  2:15,  1 user,  load average: 0.12, 0.18, 0.15
+
+
+date command
+------------
+┌──(kali㉿kali)-[~]
+└─$ date
+Wed 25 Nov 2026 11:42:30 AM IST
+
+
+mv command
+----------
+┌──(kali㉿kali)-[~]
+└─$ touch EH.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+EH.txt
+
+┌──(kali㉿kali)-[~]
+└─$ mv EH.txt EHacking.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+EHacking.txt
+
+Result:
+Successfully executed and displayed the results of uptime, date, and mv
+commands in Kali Linux.

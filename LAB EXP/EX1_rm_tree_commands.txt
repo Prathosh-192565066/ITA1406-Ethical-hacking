@@ -1,0 +1,98 @@
+ITA14 - ETHICAL HACKING
+EX - 1
+Execute and display the results for the following commands in Kali Linux
+Operating Systems: rm command, users command, tree command
+=============================================================
+
+rm command
+----------
+┌──(kali㉿kali)-[~]
+└─$ touch sample1.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+sample1.txt
+
+┌──(kali㉿kali)-[~]
+└─$ touch sample2.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+sample1.txt  sample2.txt
+
+┌──(kali㉿kali)-[~]
+└─$ touch sample3.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+sample1.txt  sample2.txt  sample3.txt
+
+┌──(kali㉿kali)-[~]
+└─$ touch sample4.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+sample1.txt  sample2.txt  sample3.txt  sample4.txt
+
+┌──(kali㉿kali)-[~]
+└─$ touch sample5.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+sample1.txt  sample2.txt  sample3.txt  sample4.txt  sample5.txt
+
+┌──(kali㉿kali)-[~]
+└─$ rm sample5.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+sample1.txt  sample2.txt  sample3.txt  sample4.txt
+
+
+tree command
+------------
+┌──(kali㉿kali)-[~]
+└─$ tree
+.
+├── sample1.txt
+├── sample2.txt
+├── sample3.txt
+└── sample4.txt
+
+0 directories, 4 files
+
+┌──(kali㉿kali)-[~]
+└─$ mkdir EH
+┌──(kali㉿kali)-[~]
+└─$ cd EH
+┌──(kali㉿kali)-[~/EH]
+└─$ touch file1.txt
+┌──(kali㉿kali)-[~/EH]
+└─$ tree
+.
+└── file1.txt
+
+0 directories, 1 file
+
+┌──(kali㉿kali)-[~/EH]
+└─$ mkdir Unit1
+┌──(kali㉿kali)-[~/EH]
+└─$ cd Unit1
+┌──(kali㉿kali)-[~/EH/Unit1]
+└─$ touch topic1.txt
+┌──(kali㉿kali)-[~/EH/Unit1]
+└─$ touch topic2.txt
+┌──(kali㉿kali)-[~/EH/Unit1]
+└─$ touch topic3.txt
+┌──(kali㉿kali)-[~/EH/Unit1]
+└─$ touch topic4.txt
+┌──(kali㉿kali)-[~/EH/Unit1]
+└─$ touch topic5.txt
+┌──(kali㉿kali)-[~/EH/Unit1]
+└─$ tree
+.
+├── topic1.txt
+├── topic2.txt
+├── topic3.txt
+├── topic4.txt
+└── topic5.txt
+
+0 directories, 5 files
+
+Result:
+Successfully executed and displayed the results of rm and tree commands
+in Kali Linux.

@@ -1,0 +1,45 @@
+ITA14 - ETHICAL HACKING
+EX - 6
+Execute and display the results for the following commands in Kali Linux
+Operating Systems: i) Touch ii) Pwd iii) Wget
+=============================================================
+
+Touch command
+-------------
+┌──(kali㉿kali)-[~]
+└─$ touch EH.txt
+┌──(kali㉿kali)-[~]
+└─$ ls
+EH.txt
+
+
+PWD command
+-----------
+┌──(kali㉿kali)-[~]
+└─$ pwd
+/home/kali
+
+
+wget command
+------------
+┌──(kali㉿kali)-[~]
+└─$ wget https://example.com/sample-file.zip
+
+--2026-11-25 11:48:02--  https://example.com/sample-file.zip
+Resolving example.com (example.com)... 93.184.216.34
+Connecting to example.com (example.com)|93.184.216.34|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 245760 (240K) [application/zip]
+Saving to: 'sample-file.zip'
+
+sample-file.zip     100%[===================>] 240.00K  1.02MB/s    in 0.2s
+
+2026-11-25 11:48:03 (1.02 MB/s) - 'sample-file.zip' saved [245760/245760]
+
+┌──(kali㉿kali)-[~]
+└─$ ls ~/Downloads
+sample-file.zip
+
+Result:
+Successfully executed and displayed the results of touch, pwd, and wget
+commands in Kali Linux.

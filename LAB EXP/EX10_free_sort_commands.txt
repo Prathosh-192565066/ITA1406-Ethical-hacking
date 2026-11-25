@@ -1,0 +1,43 @@
+ITA14 - ETHICAL HACKING
+EX - 10
+Execute the following commands in Kali Linux Operating Systems:
+Free command, Sort command
+=============================================================
+
+Free command
+------------
+┌──(kali㉿kali)-[~]
+└─$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8126464     1584220     4820132      102340     1722112     6212340
+Swap:       2097148           0     2097148
+
+┌──(kali㉿kali)-[~]
+└─$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           7936        1547        4707         100        1682        6066
+Swap:          2047           0        2047
+
+
+Sort command
+------------
+┌──(kali㉿kali)-[~]
+└─$ echo -e "Ravi\nAnitha\nKumar\nBala\nDivya" > names.txt
+┌──(kali㉿kali)-[~]
+└─$ cat names.txt
+Ravi
+Anitha
+Kumar
+Bala
+Divya
+
+┌──(kali㉿kali)-[~]
+└─$ sort names.txt
+Anitha
+Bala
+Divya
+Kumar
+Ravi
+
+Result:
+Successfully executed the free and sort commands in Kali Linux.

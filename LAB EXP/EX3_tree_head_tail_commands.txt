@@ -1,0 +1,71 @@
+ITA14 - ETHICAL HACKING
+EX - 3
+Execute and display the results for the following commands in Kali Linux
+Operating Systems: Tree, Head, Tail
+=============================================================
+
+tree command
+------------
+┌──(kali㉿kali)-[~]
+└─$ mkdir EH
+┌──(kali㉿kali)-[~]
+└─$ cd EH
+┌──(kali㉿kali)-[~/EH]
+└─$ mkdir Topic1
+┌──(kali㉿kali)-[~/EH]
+└─$ cd Topic1
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ touch unit1overview.txt
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ tree
+.
+└── unit1overview.txt
+
+0 directories, 1 file
+
+
+Inserting content into created file
+------------------------------------
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ nano unit1overview.txt
+
+(Typed the following, saved with Ctrl+O, exited with Ctrl+X)
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+
+
+head command
+------------
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ head -2 unit1overview.txt
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ head -4 unit1overview.txt
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+
+
+tail command
+------------
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ tail -2 unit1overview.txt
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+
+┌──(kali㉿kali)-[~/EH/Topic1]
+└─$ tail -4 unit1overview.txt
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+
+Result:
+Successfully executed and displayed the results of tree, head, and tail
+commands in Kali Linux.

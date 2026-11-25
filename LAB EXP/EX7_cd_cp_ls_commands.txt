@@ -1,0 +1,29 @@
+ITA14 - ETHICAL HACKING
+EX - 7
+Execute and display the results for the following commands in Kali Linux
+Operating Systems: Cd, Cp, ls
+=============================================================
+
+┌──(kali㉿kali)-[~]
+└─$ mkdir EH
+┌──(kali㉿kali)-[~]
+└─$ cd EH
+┌──(kali㉿kali)-[~/EH]
+└─$ echo "Welcome to EH" > EH.txt
+┌──(kali㉿kali)-[~/EH]
+└─$ cat EH.txt
+Welcome to EH
+
+┌──(kali㉿kali)-[~/EH]
+└─$ cp EH.txt Professornote.txt
+┌──(kali㉿kali)-[~/EH]
+└─$ cat Professornote.txt
+Welcome to EH
+
+┌──(kali㉿kali)-[~/EH]
+└─$ ls
+EH.txt  Professornote.txt
+
+Result:
+Successfully executed and displayed the results of cd, cp, and ls
+commands in Kali Linux.

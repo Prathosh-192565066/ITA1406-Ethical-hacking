@@ -1,0 +1,71 @@
+ITA14 - ETHICAL HACKING
+EX - 2
+Execute and display the results for the following commands in Kali Linux
+Operating Systems: less command, more command, vi command
+=============================================================
+
+Create file and insert content
+-------------------------------
+┌──(kali㉿kali)-[~]
+└─$ touch EH.txt
+┌──(kali㉿kali)-[~]
+└─$ nano EH.txt
+
+(Typed content, saved with Ctrl+O, exited with Ctrl+X)
+
+EH.txt contents:
+Unit 1 topics
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+
+
+more command
+------------
+┌──(kali㉿kali)-[~]
+└─$ more EH.txt
+Unit 1 topics
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+--More--(100%)
+
+
+less command
+------------
+┌──(kali㉿kali)-[~]
+└─$ less EH.txt
+Unit 1 topics
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+EH.txt (END)
+(pressed q to quit)
+
+
+vi command
+----------
+┌──(kali㉿kali)-[~]
+└─$ vi EH.txt
+(pressed i to enter insert mode)
+(moved cursor to the 'U' of "Unit 1 topics", typed "Welcome to Ethical Hacking")
+(pressed Esc, then typed :wq and pressed Enter to save and quit)
+
+Updated EH.txt contents:
+Welcome to Ethical Hacking
+Unit 1 topics
+Introduction to Ethical Hacking
+Types of Hackers and Their Roles
+Ethics of Ethical Hacking
+Ethical Hacking and the Legal System
+Proper and Responsible Disclosure
+
+Result:
+Successfully executed and displayed the results of less, more, and vi
+commands in Kali Linux.

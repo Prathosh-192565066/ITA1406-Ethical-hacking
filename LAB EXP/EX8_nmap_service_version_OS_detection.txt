@@ -1,0 +1,93 @@
+ITA14 - ETHICAL HACKING
+EX - 8
+Execute and display the results for the following Nmap service version
+and OS detection commands in Kali Linux operating systems:
+i) detect the version of services running  ii) Aggressive scan
+iii) Detect operating system of the target
+=============================================================
+
+Note: scanme.nmap.org is Nmap's official public test target, provided by
+the Nmap project specifically for learners to practice scans legally.
+
+Setup
+-----
+┌──(kali㉿kali)-[~]
+└─$ sudo apt update
+Hit:1 http://kali.download/kali kali-rolling InRelease
+Reading package lists... Done
+
+┌──(kali㉿kali)-[~]
+└─$ sudo apt install nmap -y
+Reading package lists... Done
+nmap is already the newest version (7.94-1).
+
+┌──(kali㉿kali)-[~]
+└─$ nmap --version
+Nmap version 7.94 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.4.6 openssl-3.0.13 libssh2-1.11.0 libz-1.3
+
+
+i) Detect the version of services running
+--------------------------------------------
+┌──(kali㉿kali)-[~]
+└─$ nmap -sV scanme.nmap.org
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:55 IST
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.14s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 6.6.1p1 Ubuntu
+80/tcp    open  http    Apache httpd 2.4.7 ((Ubuntu))
+9929/tcp  open  nping-echo Nping echo
+31337/tcp open  tcpwrapped
+Service detection performed. Please report any incorrect results.
+Nmap done: 1 IP address (1 host up) scanned in 12.63 seconds
+
+
+ii) Aggressive scan
+--------------------
+┌──(kali㉿kali)-[~]
+└─$ nmap -A scanme.nmap.org
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:57 IST
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.13s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 6.6.1p1 Ubuntu
+80/tcp    open  http        Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: Go ahead and ScanMe!
+9929/tcp  open  nping-echo  Nping echo
+31337/tcp open  tcpwrapped
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS details: Linux 3.13 - 4.6
+Nmap done: 1 IP address (1 host up) scanned in 18.47 seconds
+
+
+iii) Detect operating system of the target
+---------------------------------------------
+┌──(kali㉿kali)-[~]
+└─$ sudo nmap -O scanme.nmap.org
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:59 IST
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.13s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+9929/tcp  open  nping-echo
+31337/tcp open  tcpwrapped
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.13 - 4.6
+Network Distance: 12 hops
+Nmap done: 1 IP address (1 host up) scanned in 7.92 seconds
+
+Result:
+Successfully executed and displayed the results of Nmap service version
+detection, aggressive scan, and OS detection commands in Kali Linux.

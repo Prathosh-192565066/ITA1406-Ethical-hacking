@@ -1,0 +1,68 @@
+ITA14 - ETHICAL HACKING
+EX - 9
+Execute and display the results for the following Nmap Timing and
+performance commands in Kali Linux operating Systems:
+(i) polite IDS evasion  (ii) normal IDS evasion
+=============================================================
+
+Note: scanme.nmap.org is Nmap's official public test target, provided for
+learners to practice scans legally.
+
+Setup
+-----
+┌──(kali㉿kali)-[~]
+└─$ sudo apt update
+Hit:1 http://kali.download/kali kali-rolling InRelease
+Reading package lists... Done
+
+┌──(kali㉿kali)-[~]
+└─$ sudo apt install nmap -y
+Reading package lists... Done
+nmap is already the newest version (7.94-1).
+
+┌──(kali㉿kali)-[~]
+└─$ nmap --version
+Nmap version 7.94 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+
+
+(i) Polite IDS evasion
+------------------------
+┌──(kali㉿kali)-[~]
+└─$ nmap -T2 scanme.nmap.org
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 12:05 IST
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.14s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+9929/tcp  open  nping-echo
+31337/tcp open  tcpwrapped
+Nmap done: 1 IP address (1 host up) scanned in 48.36 seconds
+(T2 "Polite" slows the scan to reduce bandwidth use and the chance of
+being flagged by an IDS.)
+
+
+(ii) Normal IDS evasion
+-------------------------
+┌──(kali㉿kali)-[~]
+└─$ nmap -T3 scanme.nmap.org
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 12:07 IST
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.13s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+9929/tcp  open  nping-echo
+31337/tcp open  tcpwrapped
+Nmap done: 1 IP address (1 host up) scanned in 11.58 seconds
+(T3 "Normal" is Nmap's default timing template, balancing speed and
+stealth.)
+
+Result:
+Successfully executed and displayed the results of Nmap polite and
+normal IDS evasion timing commands in Kali Linux.
