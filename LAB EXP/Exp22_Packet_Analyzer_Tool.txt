@@ -1,0 +1,26 @@
+Experiment 22: Packet Analyzer Tool
+=============================================
+
+Tools: Wireshark, Tcpdump
+
+Command:
+tcpdump -i eth0
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ sudo tcpdump -i eth0
+
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+11:10:02.102341 IP 192.168.1.25 > 8.8.8.8: ICMP echo request, id 21, seq 1
+11:10:02.120556 IP 8.8.8.8 > 192.168.1.25: ICMP echo reply, id 21, seq 1
+11:10:03.451002 IP 192.168.1.25.52322 > 93.184.216.34.80: Flags [S], seq 1021334455
+11:10:03.468811 IP 93.184.216.34.80 > 192.168.1.25.52322: Flags [S.], seq 889200123
+11:10:03.469300 IP 192.168.1.25.52322 > 93.184.216.34.80: Flags [.], ack 1
+^C
+5 packets captured
+5 packets received by filter
+0 packets dropped by kernel
+
+Result:
+Successfully analyzed packets.

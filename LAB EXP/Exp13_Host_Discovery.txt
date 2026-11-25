@@ -1,0 +1,23 @@
+Experiment 13: Host Discovery
+=============================================
+
+Command:
+nmap -sn 192.168.1.0/24
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -sn 192.168.1.0/24
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 10:30 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.00082s latency).
+Nmap scan report for 192.168.1.5
+Host is up (0.0015s latency).
+Nmap scan report for 192.168.1.10
+Host is up (0.0021s latency).
+Nmap scan report for 192.168.1.15
+Host is up (0.0018s latency).
+Nmap done: 256 IP addresses (4 hosts up) scanned in 3.12 seconds
+
+Result:
+Successfully discovered active hosts.

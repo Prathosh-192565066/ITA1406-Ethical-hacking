@@ -1,0 +1,51 @@
+Experiment 11: Nmap Timing and Performance
+=============================================
+
+(i) Aggressive Speed Scan
+-------------------------
+Command:
+nmap -T4 192.168.1.1
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -T4 192.168.1.1
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 10:12 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.00089s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+3306/tcp open  mysql
+
+Nmap done: 1 IP address (1 host up) scanned in 2.41 seconds
+
+Result:
+Successfully performed aggressive scan using Nmap.
+
+
+(ii) Insane Speed Scan
+----------------------
+Command:
+nmap -T5 192.168.1.1
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -T5 192.168.1.1
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 10:14 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.00075s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+3306/tcp open  mysql
+
+Nmap done: 1 IP address (1 host up) scanned in 0.87 seconds
+
+Result:
+Successfully executed Nmap insane speed scan.

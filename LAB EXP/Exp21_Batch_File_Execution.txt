@@ -1,0 +1,17 @@
+Experiment 21: Batch File Execution
+=============================================
+
+Sample Batch File (sample.bat):
+@echo off
+echo Welcome to Ethical Hacking Lab
+pause
+
+Execution:
+C:\Users\Student>sample.bat
+
+Sample Output:
+Welcome to Ethical Hacking Lab
+Press any key to continue . . .
+
+Result:
+Successfully executed batch file.

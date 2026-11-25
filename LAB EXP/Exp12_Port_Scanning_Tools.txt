@@ -1,0 +1,43 @@
+Experiment 12: Port Scanning Tools
+=============================================
+
+Command 1:
+nmap 192.168.1.1
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap 192.168.1.1
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 10:20 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.0011s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.63 seconds
+
+
+Command 2:
+nmap -sS 192.168.1.1
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -sS 192.168.1.1
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 10:22 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.00098s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 1.95 seconds
+(Note: -sS performs a SYN "half-open" scan and typically requires root privileges.)
+
+Result:
+Open ports and running services were identified.

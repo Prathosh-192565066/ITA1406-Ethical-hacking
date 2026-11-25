@@ -1,0 +1,62 @@
+Experiment 23: Port Scanning Tools (Extended)
+=============================================
+
+Command 1:
+nmap -sV target-ip
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -sV 192.168.1.10
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:15 IST
+Nmap scan report for 192.168.1.10
+Host is up (0.0012s latency).
+PORT    STATE SERVICE  VERSION
+21/tcp  open  ftp      vsftpd 3.0.3
+22/tcp  open  ssh      OpenSSH 8.9p1 Ubuntu
+80/tcp  open  http     Apache httpd 2.4.41
+Service detection performed. Please report any incorrect results.
+Nmap done: 1 IP address (1 host up) scanned in 6.84 seconds
+
+
+Command 2:
+nmap -A target-ip
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -A 192.168.1.10
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:17 IST
+Nmap scan report for 192.168.1.10
+Host is up (0.0011s latency).
+PORT    STATE SERVICE  VERSION
+21/tcp  open  ftp      vsftpd 3.0.3
+22/tcp  open  ssh      OpenSSH 8.9p1 Ubuntu
+80/tcp  open  http     Apache httpd 2.4.41
+|_http-title: Apache2 Ubuntu Default Page
+Device type: general purpose
+Running: Linux 5.X
+OS details: Linux 5.0 - 5.4
+Nmap done: 1 IP address (1 host up) scanned in 14.22 seconds
+
+
+Command 3:
+nmap -p 1-65535 target-ip
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ nmap -p 1-65535 192.168.1.10
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:20 IST
+Nmap scan report for 192.168.1.10
+Host is up (0.0012s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+Nmap done: 1 IP address (1 host up) scanned in 42.67 seconds
+
+Result:
+Successfully identified services and ports.

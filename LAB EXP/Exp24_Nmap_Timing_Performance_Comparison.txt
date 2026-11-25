@@ -1,0 +1,39 @@
+Experiment 24: Nmap Timing & Performance
+=============================================
+
+Commands and Sample Timing Results (against 192.168.1.10):
+
+nmap -T0 target-ip   -> Scan duration: ~5h 20m (Paranoid, extremely slow)
+nmap -T1 target-ip   -> Scan duration: ~15m 42s (Sneaky)
+nmap -T2 target-ip   -> Scan duration: ~1m 10s (Polite)
+nmap -T3 target-ip   -> Scan duration: 8.21 seconds (Normal, default)
+nmap -T4 target-ip   -> Scan duration: 2.41 seconds (Aggressive)
+nmap -T5 target-ip   -> Scan duration: 0.87 seconds (Insane)
+
+Sample Output (T3 - Normal, default template):
+┌──(kali㉿kali)-[~]
+└─$ nmap -T3 192.168.1.10
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-25 11:30 IST
+Nmap scan report for 192.168.1.10
+Host is up (0.0012s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+80/tcp  open  http
+3306/tcp open  mysql
+Nmap done: 1 IP address (1 host up) scanned in 8.21 seconds
+
+Observation Table
+------------------
+Timing   Description
+T0       Paranoid
+T1       Sneaky
+T2       Polite
+T3       Normal
+T4       Aggressive
+T5       Insane
+
+Result:
+Successfully studied Nmap timing templates.

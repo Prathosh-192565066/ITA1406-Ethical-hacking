@@ -1,0 +1,33 @@
+Experiment 16: Reconnaissance Using Google and Whois
+=============================================
+
+Command:
+whois example.com
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ whois example.com
+
+Domain Name: EXAMPLE.COM
+Registry Domain ID: 2336799_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.iana.org
+Registrar URL: http://res-dom.iana.org
+Updated Date: 2026-08-14T07:01:31Z
+Creation Date: 1995-08-14T04:00:00Z
+Registry Expiry Date: 2027-08-13T04:00:00Z
+Registrar: RESERVED-Internet Assigned Numbers Authority
+Domain Status: clientDeleteProhibited
+Name Server: A.IANA-SERVERS.NET
+Name Server: B.IANA-SERVERS.NET
+
+Google Dork Examples:
+---------------------
+site:example.com
+filetype:pdf site:example.com
+
+(These dorks, when entered into the Google search bar, restrict results to
+pages hosted on the target domain, or to a specific file type on that
+domain, helping identify publicly indexed documents.)
+
+Result:
+Successfully gathered reconnaissance information.

